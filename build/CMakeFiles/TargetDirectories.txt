@@ -1,0 +1,3 @@
+/home/momenta/sunzhijie/code/triangle/build/CMakeFiles/rebuild_cache.dir
+/home/momenta/sunzhijie/code/triangle/build/CMakeFiles/triangle.dir
+/home/momenta/sunzhijie/code/triangle/build/CMakeFiles/edit_cache.dir

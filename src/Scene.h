@@ -18,21 +18,24 @@
 
 #include "Camera.h"
 #include "Node.h"
+#include <functional>
 
-namespace triangle {
+namespace triangle
+{
 
-class Scene {
+  class Scene
+  {
 
-public:
-  void addNode(const std::shared_ptr<Node> &node);
-  void traverse(
-      const std::function<void(std::shared_ptr<Node> node)> &nodeProcessor);
+  public:
+    void addNode(const std::shared_ptr<Node> &node);
+    void traverse(
+        const std::function<void(std::shared_ptr<Node> node)> &nodeProcessor);
 
-private:
-  void traverseInternal(
-      const std::shared_ptr<Node> &node,
-      const std::function<void(std::shared_ptr<Node> node)> &nodeProcessor);
-  std::vector<std::shared_ptr<Node>> nodes_;
-};
+  private:
+    void traverseInternal(
+        const std::shared_ptr<Node> &node,
+        const std::function<void(std::shared_ptr<Node> node)> &nodeProcessor);
+    std::vector<std::shared_ptr<Node>> nodes_;
+  };
 
 } // namespace triangle
